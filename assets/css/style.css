@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap');
 
-/* body{
-    font-family: 'Poppins', sans-serif;
-} */
-
 body{
+    font-family: 'Poppins', sans-serif;
     color: white;
-}
+} 
 
 .hero-1{
     height: 70vh;
@@ -42,6 +39,8 @@ body{
 }
 
 .herobottom-info{
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -58,19 +57,94 @@ body{
 
 /*-----------Features--------------*/
 .yabash-features{
-    color: black;
-    height: 30vh;
+    background-color:rgb(24, 36, 36);
+    min-height: 30vh;
+}
+
+
+/*-----------About---------------*/
+#about-yabash{
+    color:rgb(24, 36, 36);
+    min-height: 70vh;
+    background-color:rgb(215, 227, 227) ;
+}
+
+.about-head{
+    display: flex;
+    justify-content: center;
+}
+
+.kitchen-image{
+    display: flex;
+    justify-content: center;
+} 
+
+.kitchen-image img{
+    border-radius: 1rem;
+}
+
+/*-----------Contacts--------------*/
+#contact{
+    position: relative;
+    background-color:  #732002;
+    min-height: 50vh;
+}
+
+.contact-head{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-copywrite{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(24, 36, 36);
 }
 
 /*-----------Testimonials--------------*/
 .testimonial{
-    color: black;
-    background-color: brown;
+    color: rgb(24, 36, 36);
 }
+
 .testimonial-head{
-    
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*-----------social-networks--------------*/
+.contact-details{
+    color:rgb(215, 227, 227);
+}
+
+.contact-details h5{
+    color: rgb(24, 36, 36);
+}
+
+.social-networks>ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.social-networks li{
+    list-style: none;
+}
+
+.social-networks a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 800;
+    color:rgb(215, 227, 227);
+}
+
+a:hover {
+    color: rgb(24, 36, 36);
 }
