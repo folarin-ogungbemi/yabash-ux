@@ -154,6 +154,11 @@ body{
     color:rgb(215, 227, 227);
 }
 
+.social-networks h3{
+    margin-top: 1rem;
+}
+
+
 a:hover {
     color: rgb(24, 36, 36);
 }
