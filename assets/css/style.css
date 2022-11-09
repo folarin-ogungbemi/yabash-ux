@@ -77,7 +77,6 @@ body{
 .kitchen-image{
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
 } 
 
 .kitchen-image img{
