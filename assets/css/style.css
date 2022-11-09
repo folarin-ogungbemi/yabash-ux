@@ -55,6 +55,15 @@ body{
     border-radius: 0;
 }
 
+.btn-email{
+    background-color: rgb(24, 36, 36);
+    color: white;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
 /*-----------Features--------------*/
 .yabash-features{
     background-color:rgb(24, 36, 36);
