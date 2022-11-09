@@ -1,4 +1,76 @@
-.carousel-item{
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap');
+
+/* body{
+    font-family: 'Poppins', sans-serif;
+} */
+
+body{
+    color: white;
+}
+
+.hero-1{
     height: 70vh;
-    background: no-repeat center cover;
+    background-image:linear-gradient(rgba(89, 89, 89, 0.5), rgba(0, 0, 0, 0.5)), url(../images/restaurant-1-c.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-2{
+    height: 70vh;
+    background-image:linear-gradient(rgba(89, 89, 89, 0.5), rgba(0, 0, 0, 0.5)), url(../images/restaurant-2-c.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-3{
+    height: 70vh;
+    background-image:linear-gradient(rgba(89, 89, 89, 0.5), rgba(0, 0, 0, 0.5)), url(../images/restaurant-3-c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.herobottom-info{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.info{
+    margin: 0px;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+/*-----------Features--------------*/
+.yabash-features{
+    color: black;
+    height: 30vh;
+}
+
+/*-----------Testimonials--------------*/
+.testimonial{
+    color: black;
+    background-color: brown;
+}
+.testimonial-head{
+    
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
