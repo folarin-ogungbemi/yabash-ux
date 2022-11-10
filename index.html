@@ -67,7 +67,10 @@
                   >Register</a
                 >
               </li>
-              <a class="btn btn-danger my-2" href="#" role="button"
+              <a class="btn btn-danger my-2"
+              data-bs-toggle="modal"
+              data-bs-target="#BookingModal"
+               href="#" role="button"
                 >Book a Table</a
               >
             </ul>
@@ -76,6 +79,60 @@
       </div>
     </nav>
     <!--/.Nav links-->
+    <!--Modal Book a Table-->
+    <div
+      class="modal fade"
+      id="BookingModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="exampleModalLabel"
+              style="color: black"
+            >
+              Book a Table
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!--Booking-Form-->
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
+              <button type="submit" class="btn btn-danger form-control" style="color:white;">
+                Book Table
+              </button>
+            </form>
+            <!--/.Booking Form-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Modal Book a Table-->
+
     <!--Modal sign in-->
     <div
       class="modal fade"
@@ -149,7 +206,10 @@
                       Take a break today, and enjoy the best delicacies Nigerian
                       kitchen offers by booking a table at our Restaurant.
                     </p>
-                    <a class="btn btn-lg btn-danger" href="#" role="button"
+                    <a class="btn btn-lg btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#BookingModal"
+                      href="#" role="button"
                       >Book a Table <i class="fa-solid fa-arrow-right-long"></i
                     ></a>
                   </section>
