@@ -36,6 +36,25 @@ h2{
     text-align: center;
 }
 
+/*-----------Modal--------------*/
+
+.modal-content{
+    border-radius:0;
+}
+
+.modal-header h1{
+    text-transform: uppercase;
+    color:rgb(24, 36, 36);
+}
+
+.modal-body label{
+    color: rgb(24, 36, 36);
+}
+
+.modal .btn{
+    color: #fff;
+}
+
 /*-----------Hero--------------*/
 
 .hero-1{
@@ -87,6 +106,7 @@ h2{
 .btn{
     border-radius: 0;
 }
+
 .navbar-toggler-icon:focus-visible{
     outline: none;
     color: transparent;

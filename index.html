@@ -95,9 +95,8 @@
             <h1
               class="modal-title fs-5"
               id="exampleModalLabel"
-              style="color: black"
             >
-              Book a Table
+             Make a Reservation
             </h1>
             <button
               type="button"
@@ -109,25 +108,53 @@
           <div class="modal-body">
             <!--Booking-Form-->
             <form>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email"
-                  aria-describedby="emailHelp"
-                />
+              <label for="selectPeople" class="form-label">Number of Guest</label>
+              <select id="selectPeople" class="form-select form-select mb-3" aria-label="form-select">
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 People</option>
+                <option value="3">3 People</option>
+                <option value="3">4 People</option>
+                <option value="3">5 People</option>
+                <option value="3">6 People</option>
+                <option value="3">7 People</option>
+                <option value="3">8 People</option>
+                <option value="3">9 People</option>
+                <option value="3">10 People</option>
+              </select>
+              <div class="row">
+                <div class="col-6 my-3">
+                  <label for="selectDate" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      id="selectDate"
+                      class="form-control"
+                      placeholder="date"
+                      aria-describedby="date"
+                    />
+                </div>
+                <div class="col-6 my-3">
+                  <label for="selectTime" class="form-label">Time</label>
+                    <input
+                      type="time"
+                      id="selectTime"
+                      class="form-control"
+                      placeholder="time"
+                    />
+                </div>
               </div>
+              <label for="selectEvent" class="form-label">Type of Event</label>
+              <select id="selectEvent" class="form-select form-select mb-3" aria-label="form-select">
+                <option value="1">Birthday Party</option>
+                <option value="2">Ceremony</option>
+                <option value="3">Meeting</option>
+              </select>
               <div class="mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Password"
-                />
+                <label for="textarea" class="form-label">What would you like us to prepare for? </label>
+                <textarea class="form-control" id="textarea" placeholder="Write your text here ..." rows="3"></textarea>
               </div>
               <button
                 type="submit"
                 class="btn btn-danger form-control"
-                style="color: white"
               >
                 Book Table
               </button>
@@ -153,7 +180,6 @@
             <h1
               class="modal-title fs-5"
               id="exampleModalLabel"
-              style="color: black"
             >
               Sign In
             </h1>
@@ -185,7 +211,6 @@
               <button
                 type="submit"
                 class="btn btn-danger form-control"
-                style="color: white"
               >
                 Sign In
               </button>
