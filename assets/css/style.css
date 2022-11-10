@@ -5,18 +5,29 @@ body{
     color: white;
 } 
 
+/*-----------Navbar & Canvas--------------*/
+
+.navbar{
+    background-color: rgba(0,0,0,0.1);
+}
+.offcanvas-header, .offcanvas-body{
+    background-color: rgb(24, 36, 36);
+}
+
 .navbar-toggler{
     border: 0;
 }
 
-.navbar-toggler:focus{
-    border-radius: 0;
+.navbar-toggler:focus-visible{
+    outline: hidden;
 }
 
 .offcanvas-body a:hover{
     background-color: #dc3545;
     text-align: center;
 }
+
+/*-----------Hero--------------*/
 
 .hero-1{
     height: 70vh;
@@ -79,7 +90,7 @@ body{
 
 /*-----------Features--------------*/
 .yabash-features{
-    background-color:rgb(24, 36, 36);
+    background-color:rgb(24, 36, 36, 0.9);
     min-height: 30vh;
 }
 
@@ -87,34 +98,52 @@ body{
 /*-----------About---------------*/
 #about-yabash{
     color:rgb(24, 36, 36);
-    min-height: 70vh;
-    background-color:rgb(215, 227, 227) ;
+    min-height: 50vh;
+    background-color:#D9D9D9 ;
 }
 
-.about-head{
+.about-head,
+.kitchen-image,
+.contact-head {
     display: flex;
     justify-content: center;
 }
 
-.kitchen-image{
-    display: flex;
-    justify-content: center;
-} 
-
-.kitchen-image img{
-    border-radius: 1rem;
+.kitchen-image img:hover{
+    border: 2.5px solid rgb(24, 36, 36);
 }
+
+/*-----------Testimonials--------------*/
+.testimonial{
+    color: rgb(24, 36, 36);
+}
+
+.user-quote{
+    background-color: #D9D9D9;
+    padding: 1rem 2rem;
+}
+
+.testimonial-head{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*-----------Contacts--------------*/
 #contact{
     position: relative;
-    background-color:  #732002;
+    background-color:  rgb(24, 36, 36, 0.9);
     min-height: 50vh;
 }
 
-.contact-head{
-    display: flex;
-    justify-content: center;
+.contact-details{
+    color:rgb(215, 227, 227);
+}
+
+.contact-details h5{
+    color: rgb(24, 36, 36);
 }
 
 .contact-copywrite{
@@ -128,27 +157,7 @@ body{
     background-color:rgb(24, 36, 36);
 }
 
-/*-----------Testimonials--------------*/
-.testimonial{
-    color: rgb(24, 36, 36);
-}
-
-.testimonial-head{
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /*-----------social-networks--------------*/
-.contact-details{
-    color:rgb(215, 227, 227);
-}
-
-.contact-details h5{
-    color: rgb(24, 36, 36);
-}
-
 .social-networks>ul{
     display: flex;
     justify-content: center;
@@ -171,6 +180,6 @@ body{
     margin-top: 1rem;
 }
 
-a:hover {
-    color: rgb(24, 36, 36);
+.social-networks a:hover {
+    color: #dc3545;
 }
