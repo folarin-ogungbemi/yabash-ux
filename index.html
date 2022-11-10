@@ -14,65 +14,126 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <section class="navigation-links bg-secondary bg-opacity-25 bg-gradient">
-      <!--Nav links-->
-      <nav class="navbar navbar-expand-md">
-        <a href="./index.html" class="navbar-brand ps-lg-5">Yabash</a>
-        <!--Navbar-Toggler-button-->
+    <!--Nav links-->
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Yabash</a>
         <button
-          class="navbar-toggler pe-2"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!--/.Navbar-Toggler-button-->
         <div
-          class="collapse navbar-collapse ps-2"
-          id="navbarToggleExternalContent"
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
         >
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item me-4">
-              <a href="./index.html" class="active nav-link">Home</a>
-            </li>
-            <li class="nav-item me-4">
-              <a href="#about-yabash" class="nav-link">About</a>
-            </li>
-            <li class="nav-item me-4">
-              <a href="#" class="nav-link">Menu</a>
-            </li>
-            <li class="nav-item me-4">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Register</a>
-            </li>
-            <a
-              class="d-md-none d-sm-block btn btn-danger my-2"
-              href="#"
-              role="button"
-              >Book a Table</a
-            >
-          </ul>
-          <a
-            class="d-none d-md-block btn btn-danger me-lg-5"
-            href="#"
-            role="button"
-            >Book a Table</a
-          >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Yabash
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item me-4">
+                <a href="./index.html" class="active nav-link">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a href="#about-yabash" class="nav-link">About</a>
+              </li>
+              <li class="nav-item me-4">
+                <a href="#" class="nav-link">Menu</a>
+              </li>
+              <li class="nav-item me-4">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#SignInModal"
+                  >Register</a
+                >
+              </li>
+              <a class="btn btn-danger my-2" href="#" role="button"
+                >Book a Table</a
+              >
+            </ul>
+          </div>
         </div>
-      </nav>
-      <!--/.Nav links-->
-    </section>
+      </div>
+    </nav>
+    <!--/.Nav links-->
+    <!--Modal sign in-->
     <div
-      id="carouselExampleControls"
-      class="carousel slide"
-      data-bs-ride="carousel"
+      class="modal fade"
+      id="SignInModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
     >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="exampleModalLabel"
+              style="color: black"
+            >
+              Sign In
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!--Sign In Modal-Form-->
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
+              <button type="submit" class="btn btn-danger form-control">
+                Sign In
+              </button>
+            </form>
+            <!--/.Sign In Modal-Form-->
+            <div id="emailHelp" class="form-text">
+              Do not have an Account? Sign Up
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--/.Modal sign in-->
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <header class="hero-1">
@@ -204,7 +265,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleControls"
+        data-bs-target="#carouselControls"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -213,7 +274,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleControls"
+        data-bs-target="#carouselControls"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -261,7 +322,7 @@
       </section>
       <section class="testimonial-content container my-4">
         <div class="row">
-          <figure class="col-12 col-md-4">
+          <figure class="col-12 col-md-4 border">
             <blockquote class="blockquote">
               <p>
                 Yabash makes It easy to feel at home. Their Amala and gbegiri
@@ -301,7 +362,9 @@
         </section>
         <section class="row mt-2">
           <div class="col-12 col-md-6">
-            <div class="container text-center order-md-1 order-last about-content">
+            <div
+              class="container text-center order-md-1 order-last about-content"
+            >
               <p class="about-content-text my-3">
                 Yabash kitchen follows the renowned Nigerian cook tale, Iya
                 Bashira, otherwise known as Bashira's mum who is nown for her
@@ -314,7 +377,9 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-6 my-3 order-md-2 order-first kitchen-image">
+          <div
+            class="col-12 col-md-6 my-3 order-md-2 order-first kitchen-image"
+          >
             <img
               src="assets/images/kitchen-c.jpg"
               alt="An Image of Iya Bashira's kitchen"
@@ -361,7 +426,7 @@
               </div>
               <!--/.contact-location-->
               <!--Opening-times-->
-              <div class=" mx-auto mb-2">
+              <div class="mx-auto mb-2">
                 <small class="opening">
                   <h3>Opening times</h3>
                   <table class="mx-auto mb-2">
@@ -398,7 +463,7 @@
                 >
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control-md"
                   id="InputEmail"
                   placeholder="john@example.com"
                   aria-describedby="emailHelp"
