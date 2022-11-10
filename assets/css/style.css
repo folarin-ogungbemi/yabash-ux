@@ -147,7 +147,6 @@ button{
 /*-----------Contacts--------------*/
 #map{
     min-height: 320px;
-    border-radius: 0.5rem;
 }
 
 #contact{
@@ -184,7 +183,6 @@ button{
 .social-networks>ul{
     display: flex;
     justify-content: center;
-    justify-content: space-around;
 }
 
 .social-networks li{
@@ -204,7 +202,7 @@ button{
 }
 
 .social-networks a:hover {
-    color: #dc3545;
+    color: rgb(220, 53, 69,75%);
 }
 
 /*-----------Input form--------------*/
@@ -212,5 +210,5 @@ button{
     color:rgb(24, 36, 36);
 }
 .form-control:focus{
-    box-shadow: 0 0 0 0.25rem rgb(220, 53, 69, 25%)
+    box-shadow: 0 0 0 0.25rem rgb(220, 53, 69,75%)
 }
