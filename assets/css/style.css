@@ -6,6 +6,9 @@ body{
 } 
 
 /*-----------Navbar & Canvas--------------*/
+h2{
+    text-transform: uppercase;
+}
 
 .logo{
     font-weight: bold;
@@ -106,7 +109,6 @@ button{
     min-height: 30vh;
 }
 
-
 /*-----------About---------------*/
 #about-yabash{
     color:rgb(24, 36, 36);
@@ -138,9 +140,8 @@ button{
 }
 
 .user-quote{
-    background-color: #D9D9D9;
     padding: 1rem;
-    border: 2px solid white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -202,7 +203,9 @@ button{
 }
 
 .social-networks a:hover,
-.contact-copywrite a:hover {
+.contact-copywrite a:hover,
+.yabash-features i,
+.contact-remote i{
     color: rgb(220, 53, 69,75%);
 }
 
