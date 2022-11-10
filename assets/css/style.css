@@ -201,7 +201,8 @@ button{
     margin-top: 2rem;
 }
 
-.social-networks a:hover {
+.social-networks a:hover,
+.contact-copywrite a:hover {
     color: rgb(220, 53, 69,75%);
 }
 
