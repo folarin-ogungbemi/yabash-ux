@@ -7,6 +7,12 @@ body{
 
 /*-----------Navbar & Canvas--------------*/
 
+.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+
 .navbar{
     background-color: rgba(0,0,0,0.1);
 }
@@ -118,11 +124,6 @@ body{
     color: rgb(24, 36, 36);
 }
 
-.user-quote{
-    background-color: #D9D9D9;
-    padding: 1rem 2rem;
-}
-
 .testimonial-head{
     height: 5rem;
     display: flex;
@@ -130,8 +131,19 @@ body{
     justify-content: center;
 }
 
+.user-quote{
+    background-color: #D9D9D9;
+    padding: 1rem;
+    border: 2px solid white;
+}
+
 
 /*-----------Contacts--------------*/
+#map{
+    min-height: 320px;
+    border-radius: 0.5rem;
+}
+
 #contact{
     position: relative;
     background-color:  rgb(24, 36, 36, 0.9);

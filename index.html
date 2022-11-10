@@ -17,7 +17,7 @@
     <!--Nav links-->
     <nav class="navbar navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Yabash</a>
+        <a class="navbar-brand logo" href="./index.html">Yabash</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -321,7 +321,7 @@
         </div>
       </section>
       <section class="testimonial-content container my-4">
-        <div class="row">
+        <div class="row mx-auto container">
           <figure class="col-12 col-md-4 user-quote">
             <blockquote class="blockquote">
               <p>
@@ -395,7 +395,9 @@
       <article class="contact-details container text-center">
         <section class="row">
           <div class="col-12 col-md-4 order-md-1 order-last mt-2">
-            <!--Map-->
+            <!--Google Map-->
+            <div id="map" class="mb-4"></div>
+            <!--/.Google Map-->
           </div>
           <div class="col-12 col-md-4 order-md-2 order-2 mt-2">
             <!--contact information-->
@@ -560,5 +562,17 @@
       src="https://kit.fontawesome.com/b30d404726.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function initMap(){
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 3,
+          center: { lat: -28.024, lng: 140.887 },
+        });
+      }
+      AIzaSyB9ra3huc_zfvT0JWMNnIN5VHcxW5onfcw
+    </script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" defer></script>
   </body>
 </html>
