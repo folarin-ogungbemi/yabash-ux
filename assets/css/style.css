@@ -223,7 +223,8 @@ button{
 .social-networks a:hover,
 .contact-copywrite a:hover,
 .yabash-features i,
-.contact-remote i{
+.contact-remote i,
+.testimonial-content i{
     color: rgb(220, 53, 69,75%);
 }
 
