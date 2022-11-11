@@ -18,7 +18,7 @@ h2{
 }
 
 .navbar{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.5);
     --bs-navbar-toggler-focus-width: 0;
 }
 .offcanvas-header, .offcanvas-body{
@@ -148,6 +148,11 @@ button{
 .yabash-features{
     background-color:rgb(24, 36, 36, 0.9);
     min-height: 30vh;
+}
+
+.yabash-features h2{
+    font-size: 1.5rem;
+    color:rgb(215, 227, 227);
 }
 
 /*-----------About---------------*/
