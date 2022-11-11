@@ -18,7 +18,7 @@ h2{
 }
 
 .navbar{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.1);
     --bs-navbar-toggler-focus-width: 0;
 }
 .offcanvas-header, .offcanvas-body{
