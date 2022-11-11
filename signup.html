@@ -14,116 +14,144 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!--Sign Up form -->
-    <section class="card container signUp">
-      <div class="card-header text-center">
-        <h2>Sign Up</h2>
+    <!--Nav Links-->
+    <nav class="navbar signUp-nav fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-danger" href="./index.html">Yabash</a>
+        <a class="me-2 text-danger " href="./index.html"><i class="fa-solid fa-arrow-left"></i> Back to Home page</a>
       </div>
-      <form class="card-body">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <label for="fname" class="form-label">First name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="fname"
-              placeholder="John"
-              required
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <label for="lname" class="form-label">Last name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="lname"
-              placeholder="Doe"
-              required
-            />
-          </div>
+    </nav>
+    <!--/.Nav Links-->
+    <!--Sign Up form -->
+    <section class="signUp">
+      <section class="card container signUp-box">
+        <div class="card-header text-center">
+          <h2>Sign Up</h2>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <label for="InputEmail" class="form-label">Email</label>
-            <div class="input-group has-validation">
+        <form class="card-body">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="fname" class="form-label">First name</label>
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="InputEmail"
-                placeholder="john@example.com"
-                aria-describedby="emailHelp"
+                id="fname"
+                placeholder="John"
+                required
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="lname" class="form-label">Last name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lname"
+                placeholder="Doe"
                 required
               />
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <label for="telephone" class="form-label">Phone</label>
-            <div class="input-group has-validation">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="InputEmail" class="form-label">Email</label>
+              <div class="input-group has-validation">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail"
+                  placeholder="john@example.com"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="telephone" class="form-label">Phone</label>
+              <div class="input-group has-validation">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="telephone"
+                  aria-describedby="telephone"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <label for="inputPassword" class="form-label">Password</label>
               <input
-                type="number"
+                type="password"
+                id="inputPassword"
+                placeholder="Password"
                 class="form-control"
-                id="telephone"
-                aria-describedby="telephone"
+                aria-describedby="passwordHelpBlock"
               />
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and
+                numbers, and must not contain spaces, special characters, or
+                emoji.
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="retypePassword5" class="form-label"
+                >Retype-Password</label
+              >
+              <input
+                type="password"
+                id="retypePassword5"
+                placeholder="Retype-Password"
+                class="form-control"
+                aria-describedby="passwordHelpBlock"
+              />
+              <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and
+                numbers, and must not contain spaces, special characters, or
+                emoji.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <label for="inputPassword" class="form-label">Password</label>
-            <input
-              type="password"
-              id="inputPassword"
-              placeholder="Password"
-              class="form-control"
-              aria-describedby="passwordHelpBlock"
-            />
-            <div id="passwordHelpBlock" class="form-text">
-              Your password must be 8-20 characters long, contain letters and
-              numbers, and must not contain spaces, special characters, or
-              emoji.
+          <div class="col-12 my-3">
+            <div class="newsletter-check">
+              <input
+                class="newsletter-check-input"
+                type="checkbox"
+                id="newsletter"
+                aria-describedby="checkboxNewsletter"
+              />
+              <label class="newsletter-label text-danger" for="newsletter">
+                Sign Up for Newsletter
+              </label>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <label for="retypePassword5" class="form-label"
-              >Retype-Password</label
-            >
-            <input
-              type="password"
-              id="retypePassword5"
-              placeholder="Retype-Password"
-              class="form-control"
-              aria-describedby="passwordHelpBlock"
-            />
-            <div id="passwordHelpBlock" class="form-text">
-              Your password must be 8-20 characters long, contain letters and
-              numbers, and must not contain spaces, special characters, or
-              emoji.
-            </div>
+          <div class="col-12">
+            <button class="btn btn-danger form-control" type="submit">
+              Submit form
+            </button>
           </div>
-        </div>
-        <div class="col-12 my-3">
-          <div class="newsletter-check">
-            <input
-              class="newsletter-check-input"
-              type="checkbox"
-              id="newsletter"
-              aria-describedby="checkboxNewsletter"
-            />
-            <label class="newsletter-label text-danger" for="newsletter">
-              Sign Up for Newsletter
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-danger form-control" type="submit">
-            Submit form
-          </button>
-        </div>
-      </form>
+        </form>
+      </section>
     </section>
     <!--/.Sign Up form -->
-
+    <!--Copywrite-->
+    <footer>
+      <section class="contact-copywrite">
+        <small class="row">
+          <div class="col-12">
+            <span>
+              <a
+                href="https://github.com/folarin-ogungbemi"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit folarin's github page(open in a new tab)"
+                class="nav-link d-inline"
+                >&copy; 2022 Folarin projects. <i class="fa-brands fa-github"></i></a
+            ></span>
+          </div>
+        </small>
+      </section>
+    </footer>
+    <!--/.Copywrite-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

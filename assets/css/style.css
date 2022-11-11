@@ -272,6 +272,23 @@ button{
     --bs-card-cap-bg: 0;
 }
 
+.signUp{
+    position: relative;
+    height: 100vh;
+}
+
+.signUp-box{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
 .signUp .btn{
     color:rgb(215, 227, 227);
+}
+
+.signUp-nav a{
+    text-decoration: none;
 }
