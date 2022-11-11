@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(215, 227, 227);
 } 
 
 /*-----------Navbar & Canvas--------------*/
@@ -52,7 +52,7 @@ h2{
 }
 
 .modal .btn{
-    color: #fff;
+    color: rgb(215, 227, 227);
 }
 
 /*-----------Hero--------------*/
