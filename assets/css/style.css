@@ -21,8 +21,17 @@ h2{
     background-color: rgba(0,0,0,0.1);
     --bs-navbar-toggler-focus-width: 0;
 }
+
+.nav-link{
+    color:rgb(215, 227, 227);
+}
+
 .offcanvas-header, .offcanvas-body{
     background-color: rgb(24, 36, 36);
+}
+
+.navbar-brand:hover{
+    color:rgb(24, 36, 36);
 }
 
 .navbar-toggler{
@@ -30,6 +39,7 @@ h2{
 }
 
 .offcanvas-body a:hover{
+    color:rgb(215, 227, 227);
     background-color: #dc3545;
     text-align: center;
 }
@@ -257,7 +267,12 @@ button{
     color:rgb(24, 36, 36);
 }
 .form-control:focus{
-    box-shadow: 0 0 0 0.25rem rgb(220, 53, 69,75%)
+    box-shadow: 0 0 0 0.25rem rgb(220, 53, 69,75%);
+    border-color: #dc3545;
+}
+
+.form-control:focus-visible{
+    outline: none;
 }
 
 /*-------------Sign Up -------------*/
@@ -272,6 +287,9 @@ button{
     position: relative;
     height: 100vh;
     width: 100vw;
+}
+.signUp-modal a{
+    color: #dc3545;
 }
 
 .signUp-box{
@@ -288,10 +306,11 @@ button{
 
 .signUp-nav a{
     text-decoration: none;
+    color: #dc3545;
 }
-
-.signUp-nav a:hover{
-    color: #D9D9D9;
+.signUp-nav a:hover,
+.signUp-modal a:hover{
+    color:rgb(24, 36, 36);
 }
 
 /*-----Media Queries ------*/
