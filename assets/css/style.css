@@ -11,6 +11,12 @@ h2{
     color: rgb(24, 36, 36);
 }
 
+.feature-title{
+    font-size: 1.2rem;
+    color: rgb(215, 227, 227);
+    text-transform: uppercase;
+}
+
 .logo{
     font-weight: bold;
     font-size: 1.5rem;
@@ -213,16 +219,20 @@ button{
 }
 
 #contact h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: underline;
 }
 
-.contact-details{
-    color:rgb(215, 227, 227);
+#contact p,
+#contact span,
+#contact th,
+#contact td{
+    font-size: 0.8rem;
 }
 
-.contact-details h5{
-    color: rgb(24, 36, 36);
+
+.contact-details{
+    color:rgb(215, 227, 227);
 }
 
 .contact-copywrite{
