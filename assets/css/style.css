@@ -69,6 +69,17 @@ h2{
     color: rgb(215, 227, 227);
 }
 
+.modal .booking-info p{
+    color:rgb(24, 36, 36);
+}
+.form-select{
+    border-radius: 0;
+}
+.form-select:focus{
+    box-shadow: 0 0 0 0.25rem rgb(220, 53, 69,75%);
+    border-color: #dc3545;
+}
+
 /*-----------Hero--------------*/
 
 .hero-1{
