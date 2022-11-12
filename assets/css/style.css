@@ -226,6 +226,7 @@ button{
 }
 
 .contact-copywrite{
+    font-size: 0.8rem;
     height: fit-content;
     display: flex;
     justify-content: center;

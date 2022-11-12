@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yabash | Your best bet for Nigerian Delicacies.</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!--Nav Links-->
@@ -27,7 +26,7 @@
     </header>
     <!--/.Nav Links-->
     <!--Sign Up form -->
-    <section class="signUp">
+    <main class="signUp">
       <section class="card container signUp-box">
         <div class="card-header text-center">
           <h2>Sign Up</h2>
@@ -35,38 +34,37 @@
         <form class="card-body">
           <div class="row">
             <div class="col-12 col-md-6">
-              <label for="fname" class="form-label">First name</label>
+              <label for="firstname" class="form-label">First name</label>
               <input
                 type="text"
                 class="form-control"
-                id="fname"
+                id="firstname"
+                aria-describedby="firstname"
                 placeholder="John"
-                required
-              />
+                required>
             </div>
             <div class="col-12 col-md-6">
-              <label for="lname" class="form-label">Last name</label>
+              <label for="lastname" class="form-label">Last name</label>
               <input
                 type="text"
                 class="form-control"
-                id="lname"
+                id="lastname"
+                aria-describedby="lastname"
                 placeholder="Doe"
-                required
-              />
+                required>
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-6">
-              <label for="InputEmail" class="form-label">Email</label>
+              <label for="inputEmail" class="form-label">Email</label>
               <div class="input-group has-validation">
                 <input
                   type="email"
                   class="form-control"
-                  id="InputEmail"
+                  id="inputEmail"
                   placeholder="john@example.com"
-                  aria-describedby="emailHelp"
-                  required
-                />
+                  aria-describedby="inputEmail"
+                  required>
               </div>
             </div>
             <div class="col-12 col-md-6">
@@ -76,8 +74,7 @@
                   type="number"
                   class="form-control"
                   id="telephone"
-                  aria-describedby="telephone"
-                />
+                  aria-describedby="telephone">
               </div>
             </div>
           </div>
@@ -89,8 +86,7 @@
                 id="inputPassword"
                 placeholder="Password"
                 class="form-control"
-                aria-describedby="passwordHelpBlock"
-              />
+                aria-describedby="inputPassword">
               <div id="passwordHelpBlock" class="form-text">
                 Your password must be 8-20 characters long, contain letters and
                 numbers, and must not contain spaces, special characters, or
@@ -98,16 +94,15 @@
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <label for="retypePassword5" class="form-label"
+              <label for="retypePassword" class="form-label"
                 >Retype-Password</label
               >
               <input
                 type="password"
-                id="retypePassword5"
+                id="retypePassword"
                 placeholder="Retype-Password"
                 class="form-control"
-                aria-describedby="passwordHelpBlock"
-              />
+                aria-describedby="retypePassword">
             </div>
           </div>
           <div class="col-12 my-3">
@@ -115,10 +110,9 @@
               <input
                 class="newsletter-check-input"
                 type="checkbox"
-                id="newsletter"
-                aria-describedby="checkboxNewsletter"
-              />
-              <label class="newsletter-label text-danger" for="newsletter">
+                id="checkboxNewsletter"
+                aria-describedby="checkboxNewsletter">
+              <label class="newsletter-label text-danger" for="checkboxNewsletter">
                 Sign Up for Newsletter
               </label>
             </div>
@@ -131,27 +125,27 @@
         </form>
       </section>
       <!--/.Sign Up form -->
-      <!--Copywrite-->
-      <footer>
-        <section class="contact-copywrite fixed-bottom">
-          <small class="row">
-            <div class="col-12">
-              <span>
-                <a
-                  href="https://github.com/folarin-ogungbemi"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="visit folarin's github page(open in a new tab)"
-                  class="nav-link d-inline"
-                  >&copy; 2022 Folarin projects.
-                  <i class="fa-brands fa-github"></i></a
-              ></span>
-            </div>
-          </small>
-        </section>
-      </footer>
-      <!--/.Copywrite-->
-    </section>
+    </main>
+    <!--Copywrite-->
+    <footer>
+      <div class="contact-copywrite fixed-bottom">
+        <div class="row">
+          <div class="col-12">
+            <span>
+              <a
+                href="https://github.com/folarin-ogungbemi"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit folarin's github page(open in a new tab)"
+                class="nav-link d-inline"
+                >&copy; 2022 Folarin projects.
+                <i class="fa-brands fa-github"></i></a
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/.Copywrite-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
