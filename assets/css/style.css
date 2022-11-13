@@ -153,6 +153,11 @@ h2{
 
 .btn{
     border-radius: 0;
+    border: 0;
+}
+
+.btn-secondary{
+    background-color: rgb(24, 36, 36, 0.9);
 }
 
 .navbar-toggler-icon:focus-visible{

@@ -1,18 +1,18 @@
 
 function reserve(event) {
-    var bookEvent = document.getElementById('selectEvent').value;
-    var date = document.getElementById('selectDate').value;
-    var time = document.getElementById('selectTime').value;
-    var guest = document.getElementById('selectPeople').value;
-    var confirmationText = `You have made the following reservation: \n\n - Booked Event: ${ bookEvent}\n - Date: ${ date} \n - Time: ${ time}\n - Number of Guest: ${ guest} \n\n Confirm Reservation?`;
-    var valid = confirm(confirmationText);
+    let bookEvent = document.getElementById('selectEvent').value;
+    let date = document.getElementById('selectDate').value;
+    let time = document.getElementById('selectTime').value;
+    let guest = document.getElementById('selectPeople').value;
+    let confirmationText = `You have made the following reservation: \n\n -> Booked Event: ${ bookEvent}\n -> Date: ${ date} \n -> Time: ${ time}\n -> Number of Guest: ${ guest} \n\n Confirm Reservation?`;
+    let valid = confirm(confirmationText);
     if (valid == false){
         event.preventDefault();
     }
 }
 
 function sendMail(contactForm) {
-    emailjs.send("service_4frrkbj", "yabash GmbH", {
+    emailjs.send('service_4frrkbj', 'yabash GmbH', {
         "from_name": 'Customer',
         "from_email": 'Customer@gmail.com',
         "message":  `Date : ${contactForm.selectDate.value}
