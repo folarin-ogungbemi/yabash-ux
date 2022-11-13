@@ -298,47 +298,13 @@ button{
 }
 
 /*-------------Sign Up -------------*/
-.card{
-    border-radius: 0;
-}
-.card{
-    --bs-card-cap-bg: 0;
-}
 
-.signUp{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-.signUp-modal a{
+.signIn-modal a,
+.Registration-modal a{
     color: #dc3545;
 }
 
-.signUp-box{
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    height: fit-content;
-    width: fit-content;
-}
-
-.signUp .btn{
-    color:rgb(215, 227, 227);
-}
-
-.signUp-nav a{
-    text-decoration: none;
-    color: #dc3545;
-}
-.signUp-nav a:hover,
-.signUp-modal a:hover{
+.signIn-modal a:hover,
+.Registration-modal a:hover{
     color:rgb(24, 36, 36);
-}
-
-/*-----Media Queries ------*/
-@media screen and (max-width: 700px) {
-    .signUp{
-      margin-top: 5rem;
-      margin-bottom: 3rem;
-    }
 }
