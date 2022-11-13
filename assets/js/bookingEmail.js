@@ -15,11 +15,11 @@ function sendMail(contactForm) {
     emailjs.send('service_4frrkbj', 'yabash GmbH', {
         "from_name": 'Customer',
         "from_email": 'Customer@gmail.com',
-        "message":  `Date : ${contactForm.selectDate.value}
-            Time : ${contactForm.selectTime.value}
-            Number of Guest : ${contactForm.selectPeople.value}
-            Type of Event : ${contactForm.selectEvent.value}
-            Additional Information : ${contactForm.eventInfo.value}`
+        "message":  `|Date : ${contactForm.selectDate.value}| ,
+            |Time : ${contactForm.selectTime.value}| ,
+            |Number of Guest : ${contactForm.selectPeople.value}| ,
+            |Type of Event : ${contactForm.selectEvent.value}| ,
+            |Additional Information : ${contactForm.eventInfo.value}|.`
     })
     .then(
         function(response) {
