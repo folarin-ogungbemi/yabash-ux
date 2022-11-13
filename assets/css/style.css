@@ -157,7 +157,8 @@ h2{
 }
 
 .btn-secondary{
-    background-color: rgb(24, 36, 36, 0.9);
+    background-color: rgb(215, 227, 227);
+    color:rgb(24, 36, 36);
 }
 
 .navbar-toggler-icon:focus-visible{
