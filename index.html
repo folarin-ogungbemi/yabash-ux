@@ -106,7 +106,8 @@
           </div>
           <div class="modal-body">
             <!--Booking-Form-->
-            <form onsubmit="return sendMail(this);">
+            <!-- <form onsubmit="return sendMail(this);"> -->
+            <form>
               <label for="selectPeople" class="form-label">Number of Guest</label>
               <select id="selectPeople" name="selectPeople" class="form-select form-select mb-3" aria-label="form-select">
                 <option value="1 Person">1 Person</option>
@@ -132,14 +133,33 @@
                     >
                 </div>
                 <div class="col-6 my-3">
-                  <label for="selectTime" class="form-label">Time</label>
+                  <!-- <label for="selectTime" class="form-label">Time</label>
                     <input
                       type="time"
                       id="selectTime"
                       name="selectTime"
                       class="form-control"
                       aria-describedby="selectTime"
-                    >
+                    > -->
+                    <label for="selectTime" class="form-label">Time</label>
+                    <select id="selectTime" name="selectTime" class="form-select form-select mb-3" aria-label="form-select">
+                      <option value="08:00 am">08:00 am</option>
+                      <option value="09:00 am">09:00 am</option>
+                      <option value="10:00 am">10:00 am</option>
+                      <option value="11:00 am">11:00 am</option>
+                      <option value="12:00 noon">12:00 noon</option>
+                      <option value="13:00 pm">13:00 pm</option>
+                      <option value="14:00 pm">14:00 pm</option>
+                      <option value="15:00 pm">15:00 pm</option>
+                      <option value="16:00 pm">16:00 pm</option>
+                      <option value="17:00 pm">17:00 pm</option>
+                      <option value="18:00 pm">18:00 pm</option>
+                      <option value="19:00 pm">19:00 pm</option>
+                      <option value="20:00 pm">20:00 pm</option>
+                      <option value="21:00 pm">21:00 pm</option>
+                      <option value="22:00 pm">22:00 pm</option>
+                      <option value="23:00 pm">23:00 pm</option>
+                    </select>
                 </div>
               </div>
               <label for="selectEvent" class="form-label">Type of Event</label>
@@ -278,7 +298,8 @@
                     id="firstname"
                     aria-describedby="firstname"
                     placeholder="John"
-                    required>
+                    required
+                    aria-required="fistname">
                 </div>
                 <div class="col-12 col-md-6">
                   <label for="lastname" class="form-label">Last name</label>
@@ -288,7 +309,8 @@
                     id="lastname"
                     aria-describedby="lastname"
                     placeholder="Doe"
-                    required>
+                    required
+                    aria-required="lastname">
                 </div>
               </div>
               <div class="row">
@@ -301,7 +323,8 @@
                       id="inputEmail"
                       placeholder="john@example.com"
                       aria-describedby="inputEmail"
-                      required>
+                      required
+                      aria-required="inputEmail">
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -323,7 +346,9 @@
                     id="inputPassword"
                     placeholder="Password"
                     class="form-control"
-                    aria-describedby="inputPassword">
+                    aria-describedby="inputPassword"
+                    required
+                    aria-required="retypePassword">
                   <small id="passwordHelpBlock" class="form-text">
                     Your password must be 8-20 characters long, contain letters and
                     numbers, and must not contain spaces, special characters, or
@@ -339,7 +364,9 @@
                     id="retypePassword"
                     placeholder="Retype-Password"
                     class="form-control"
-                    aria-describedby="retypePassword">
+                    aria-describedby="retypePassword"
+                    required
+                    aria-required="retypePassword">
                 </div>
               </div>
               <div class="col-12 my-3">
