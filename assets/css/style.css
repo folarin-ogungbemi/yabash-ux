@@ -83,7 +83,9 @@ h2{
 /*-----------Hero--------------*/
 
 .head-text{
-    font-size: 300%;
+    text-transform: capitalize;
+    color: rgb(215, 227, 227);
+    font-size: calc(2.2rem + 1vw);
 }
 
 .hero-1{
