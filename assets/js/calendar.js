@@ -77,7 +77,7 @@ month_el.textContent = months[month] + " " + year;
 // format selected-date
 selected_date_el.textContent = formatDate(date);
 
-document.addEventListener("DOMContentLoaded", function(){
+date_picker_el.addEventListener("click", function(){
     date_picker_el.onclick = toggleDatePicker;
     next_month_el.onclick = goToNextMonth;
     prev_month_el.onclick = goToPreviousMonth;
@@ -143,10 +143,10 @@ function populateDates(){
             populateDates();
         });
         days_el.appendChild(day_element);
-        // make past dates unclickable.
+           // make past dates unclickable.
         let availableDate = new Date(year + "-" + (month+1) + "-" + (i + 1));
         if (date.getTime() > availableDate.getTime()){
-            day_element.remove("click");
+            day_element.removeEventListener("click", populateDates);
         }      
     }
 }
