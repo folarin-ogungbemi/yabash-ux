@@ -124,18 +124,14 @@
               </select>
               <div class="row">
                 <div class="col-6 my-3">
-                  <label class="form-label">Date</label>
-                  <div class="date-picker-wrapper">
-                    <div class="selected-date"></div>
-                    <div class="dates-container">
-                        <div class="month">
-                          <div class="arrows prev-month">&lt;</div>
-                          <div class="month-item"></div>
-                          <div class="arrows next-month">&gt;</div>
-                        </div>
-                        <div class="days-container"></div>
-                    </div>
-                  </div>
+                  <label for="selectDate" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      id="selectDate"
+                      name="selectDate"
+                      class="form-control"
+                      aria-describedby="selectDate"
+                    >
                 </div>
                 <div class="col-6 my-3">
                   <!-- <label for="selectTime" class="form-label">Time</label>
@@ -147,23 +143,23 @@
                       aria-describedby="selectTime"
                     > -->
                     <label for="selectTime" class="form-label">Time</label>
-                    <select id="selectTime" name="selectTime" class="form-select times-container form-select mb-3" aria-label="form-select">
-                      <option value="08:00 am">08:00 am</option>
-                      <option value="09:00 am">09:00 am</option>
-                      <option value="10:00 am">10:00 am</option>
-                      <option value="11:00 am">11:00 am</option>
-                      <option value="12:00 noon">12:00 noon</option>
-                      <option value="13:00 pm">13:00 pm</option>
-                      <option value="14:00 pm">14:00 pm</option>
-                      <option value="15:00 pm">15:00 pm</option>
-                      <option value="16:00 pm">16:00 pm</option>
-                      <option value="17:00 pm">17:00 pm</option>
-                      <option value="18:00 pm">18:00 pm</option>
-                      <option value="19:00 pm">19:00 pm</option>
-                      <option value="20:00 pm">20:00 pm</option>
-                      <option value="21:00 pm">21:00 pm</option>
-                      <option value="22:00 pm">22:00 pm</option>
-                      <option value="23:00 pm">23:00 pm</option>
+                    <select id="selectTime" name="selectTime" class="form-select form-select mb-3" aria-label="form-select">
+                      <option class="timeOption" value="08:00 am">08:00 am</option>
+                      <option class="timeOption" value="09:00 am">09:00 am</option>
+                      <option class="timeOption" value="10:00 am">10:00 am</option>
+                      <option class="timeOption" value="11:00 am">11:00 am</option>
+                      <option class="timeOption" value="12:00 noon">12:00 noon</option>
+                      <option class="timeOption" value="13:00 pm">13:00 pm</option>
+                      <option class="timeOption" value="14:00 pm">14:00 pm</option>
+                      <option class="timeOption" value="15:00 pm">15:00 pm</option>
+                      <option class="timeOption" value="16:00 pm">16:00 pm</option>
+                      <option class="timeOption" value="17:00 pm">17:00 pm</option>
+                      <option class="timeOption" value="18:00 pm">18:00 pm</option>
+                      <option class="timeOption" value="19:00 pm">19:00 pm</option>
+                      <option class="timeOption" value="20:00 pm">20:00 pm</option>
+                      <option class="timeOption" value="21:00 pm">21:00 pm</option>
+                      <option class="timeOption" value="22:00 pm">22:00 pm</option>
+                      <option class="timeOption" value="23:00 pm">23:00 pm</option>
                     </select>
                 </div>
               </div>
@@ -182,6 +178,7 @@
               onclick="reserve(event)"
                 type="submit"
                 class="btn btn-danger form-control"
+                id="register"
               >
                 Reserve Table
               </button>
@@ -841,6 +838,5 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf8scAUZ1Y2I7v1wb-RVWDWVgEvO9x-PY&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/bookingEmail.js"></script>
-    <script src="assets/js/calendar.js"></script>
   </body>
 </html>
